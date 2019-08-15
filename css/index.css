@@ -1,0 +1,15 @@
+.container {
+    margin-top: 50px;
+    /* border: solid black 1px; */
+    border-radius: 20px;
+}
+
+h3 {
+    color: brown;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
