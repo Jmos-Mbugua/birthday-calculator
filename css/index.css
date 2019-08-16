@@ -12,3 +12,17 @@ p {
     text-align: center;
 }
 
+.radios {
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+
+
+.btn {
+    margin-top: 50px;
+}
+
