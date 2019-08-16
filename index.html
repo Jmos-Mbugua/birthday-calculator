@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <script src="script.js" type="text/javascript"></script>
+    <!-- <script src="script.js" type="text/javascript"></script> -->
 </head>
 
 <body>
@@ -18,22 +18,22 @@
             be?
         </p>
 
-        <form name="myForm"  onsubmit="return validateForm()">
+        <form>
 
 
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-9">
                     <label for="inputyear4">Year*</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="year of birth">
+                    <input type="date" class="form-control" id="inputyear4" placeholder="YYYY" required/>
                 </div>
-                <div class="form-group col-md-4">
+                <!-- <div class="form-group col-md-4">
                     <label for="inputmonth4">Month*</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Month">
+                    <input type="month" class="form-control" id="inputmonth4" placeholder="MM">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputday4">Day*</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Day">
-                </div>
+                    <input type="date" class="form-control" id="inputday4" placeholder="DD">
+                </div> -->
             </div>
 
             <div class="container align-items-center">
@@ -42,7 +42,7 @@
                         <legend class="col-form-label col-sm-1 pt-0">*Gender</legend>
                         <div class="col-sm-11">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
                                 <label class="form-check-label" for="gridRadios1">Male</label>
                             </div>
                             <div class="form-check">
@@ -54,7 +54,7 @@
                 </fieldset>
             </div>
             <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick="validateForm ()">Submit</button>
             </div>
 
         </form>
@@ -63,6 +63,20 @@
 
 
     </div>
+
+    <!-- <script>
+        function validateForm () {
+    var year = document.getElementById("inputyear4");
+    // var month = document.getElementById("inputmonth4");
+    // var day = document.getElementById("inputday4");
+
+    if(year.value == ""){
+        alert("Please fill in your details");
+
+    }
+    // else if (year.length.value)
+}
+    </script> -->
 
 </body>
 
