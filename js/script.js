@@ -1,3 +1,4 @@
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"];
 // form validation function
 function validateForm() {
     var gender = document.getElementsByName("gender");
