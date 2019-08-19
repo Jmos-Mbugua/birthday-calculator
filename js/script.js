@@ -129,4 +129,22 @@ function getUserDetails() {
     return userDetailsObj;
 
 }
+// function to get the day of the week
+function dayOfWkCal() {
+    var userDetailsObj = getUserDetails();
+    var day = userDetailsObj.mdate;
+    var month = userDetailsObj.mmonth;
+    var year = userDetailsObj.myear;
+
+    var a = Math.floor((14 - month) / 12);
+    var y = year - a;
+    var m = month + 12 * a - 2;
+    dayOfWk = (day + y + Math.floor(y / 4) - Math.floor(y / 100) +
+        Math.floor(year / 400) + Math.floor((31 * m) / 12)) % 7;
+
+    var myDay = daysOfWeek[dayOfWk];
+    // console.log(myDay);
+    return myDay;
+
+}
     
