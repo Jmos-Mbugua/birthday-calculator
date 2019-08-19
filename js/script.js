@@ -1,4 +1,23 @@
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"];
+var maleAkanNames = {
+    "Sunday": "Kwasi",
+    "Monday": "Kwadwo",
+    "Tuesday": "Kwabena",
+    "Wednesday": "Kwaku",
+    "Thurday": "Yaw",
+    "Friday": "Kofi",
+    "Saturday": "Kwame"
+};
+
+var femaleAkanNames = {
+    "Sunday": "Akosua",
+    "Monday": "Adwoa",
+    "Tuesday": "Abenaa",
+    "Wednesday": "Akua",
+    "Thurday": "Yaa",
+    "Friday": "Afua",
+    "Saturday": "Ama"
+};
 // form validation function
 function validateForm() {
     var gender = document.getElementsByName("gender");
