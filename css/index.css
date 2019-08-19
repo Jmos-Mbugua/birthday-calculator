@@ -4,15 +4,20 @@
 }
 
 h3 {
-    color: #f3e100;
+    color: yellow;
     text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: blue;
+    opacity: 1.0;
 }
 
 p {
     text-align: center;
     color: black;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .radios {
@@ -23,15 +28,21 @@ legend {
     font-weight: bold;
 }
 
-
-
 .btn {
     margin-top: 50px;
 }
 
 body {
-    /* background-color: gold; */
     background-image: url(/images/spelling.jpg);
-    /* background-repeat: no-repeat; */
 }
 
+#button {
+    background-color: yellow;
+    color: blue;
+}
+
+#results {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
