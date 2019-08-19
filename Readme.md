@@ -21,6 +21,7 @@ This Website calculates user's  day of the week which he/she was born. After cal
 No Known Bugs
 ### License
 This project is Licensed under MIT.
+©2019 Copyright.
 ### Collaborate
 >To Collaborate, Reach me out at:
 >>Github: Jmos-Mbugua
