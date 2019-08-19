@@ -61,3 +61,28 @@
                 return false;
             }
         }
+        if (myear.value == "" || myear.value == null) {
+
+            document.getElementById("myear").innerHTML = "Year Required";
+            document.getElementById("myear").style.color = "red";
+            myear.style.border = "2px solid red";
+            return false;
+        } else {
+            if (!isNaN(myear.value)) {
+                if (myear.value.length != 4) {
+                    document.getElementById("myear").innerHTML = "Invalid Year";
+                    document.getElementById("myear").style.color = "red";
+                    myear.style.border = "2px solid red";
+                    return false;
+                } else {
+                    document.getElementById("myear").innerHTML = "Year Ok!";
+                    document.getElementById("myear").style.color = "green";
+                    myear.style.border = "2px solid green";
+                }
+            } else {
+                document.getElementById("myear").innerHTML = "Year must be a Number";
+                document.getElementById("myear").style.color = "red";
+                myear.style.border = "2px solid red";
+                return false;
+            }
+        }
