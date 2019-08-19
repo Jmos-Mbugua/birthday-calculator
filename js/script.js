@@ -193,7 +193,7 @@ function getAkanName() {
     }
 
 
-    document.getElementById("results").innerHTML = "Hey Your Akan name is " + myAkanName;
+    document.getElementById("results").innerHTML = "Hey Your Akan name would be " + myAkanName;
 
 
 
