@@ -86,3 +86,20 @@
                 return false;
             }
         }
+        while (!formValid && i < gender.length) {
+            if (gender[i].checked) {
+                // mgender = gender[i].value;
+                document.getElementById("legend").style.color = "green";
+                document.getElementById("legend").innerHTML = "Gender Ok!";
+                formValid = true;
+            }
+            i++;
+        }
+        if (!formValid) {
+            document.getElementById("legend").style.color = "red";
+            return false;
+        }
+        return formValid;
+    
+    }
+    
