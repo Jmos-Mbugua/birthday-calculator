@@ -4,12 +4,15 @@
 }
 
 h3 {
-    color: brown;
+    color: #f3e100;
     text-align: center;
 }
 
 p {
     text-align: center;
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
 }
 
 .radios {
@@ -24,5 +27,11 @@ legend {
 
 .btn {
     margin-top: 50px;
+}
+
+body {
+    /* background-color: gold; */
+    background-image: url(/images/spelling.jpg);
+    /* background-repeat: no-repeat; */
 }
 
