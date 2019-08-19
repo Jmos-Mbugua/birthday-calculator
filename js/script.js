@@ -102,4 +102,31 @@
         return formValid;
     
     }
+
+    //functions to get user details
+function getUserDetails() {
+    var gender = document.getElementsByName("gender");
+    var mdate = parseInt(document.getElementById("day").value);
+    var mmonth = parseInt(document.getElementById("month").value);
+    var myear = parseInt(document.getElementById("year").value);
+    var i = 0;
+
+    while (i < gender.length) {
+        if (gender[i].checked)
+
+            mgender = gender[i].value;
+        i++;
+
+    }
+
+
+    var userDetailsObj = {
+        mdate: mdate,
+        mmonth: mmonth,
+        myear: myear,
+        mgender: mgender
+    }
+    return userDetailsObj;
+
+}
     
