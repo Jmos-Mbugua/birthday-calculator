@@ -147,4 +147,28 @@ function dayOfWkCal() {
     return myDay;
 
 }
+// function to get Akan Names
+function getAkanName() {
+    var userDetailsObj = getUserDetails();
+    var gender = userDetailsObj.mgender;
+    var dayOfBirth = dayOfWkCal();
+
+    if (gender === "male") {
+        for (var akanKey in maleAkanNames) {
+            if (maleAkanNames.hasOwnProperty(akanKey)) {
+                if (akanKey === dayOfBirth)
+                    myAkanName = maleAkanNames[akanKey];
+            }
+        }
+    } else if (gender === "female") {
+        for (var akanKey in femaleAkanNames) {
+            if (femaleAkanNames.hasOwnProperty(akanKey)) {
+                if (akanKey === dayOfBirth)
+                    myAkanName = femaleAkanNames[akanKey];
+            }
+        }
+
+    } else {
+        alert("error");
+    }
     
