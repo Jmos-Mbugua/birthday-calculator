@@ -1,23 +1,5 @@
-var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"];
-var maleAkanNames = {
-    "Sunday": "Kwasi",
-    "Monday": "Kwadwo",
-    "Tuesday": "Kwabena",
-    "Wednesday": "Kwaku",
-    "Thurday": "Yaw",
-    "Friday": "Kofi",
-    "Saturday": "Kwame"
-};
 
-var femaleAkanNames = {
-    "Sunday": "Akosua",
-    "Monday": "Adwoa",
-    "Tuesday": "Abenaa",
-    "Wednesday": "Akua",
-    "Thurday": "Yaa",
-    "Friday": "Afua",
-    "Saturday": "Ama"
-};
+
 // form validation function
 function validateForm() {
     var gender = document.getElementsByName("gender");
@@ -162,11 +144,34 @@ function dayOfWkCal() {
     dayOfWk = (day + y + Math.floor(y / 4) - Math.floor(y / 100) +
         Math.floor(year / 400) + Math.floor((31 * m) / 12)) % 7;
 
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"];
+
     var myDay = daysOfWeek[dayOfWk];
     // console.log(myDay);
     return myDay;
 
 }
+
+
+var maleAkanNames = {
+    "Sunday": "Kwasi",
+    "Monday": "Kwadwo",
+    "Tuesday": "Kwabena",
+    "Wednesday": "Kwaku",
+    "Thurday": "Yaw",
+    "Friday": "Kofi",
+    "Saturday": "Kwame"
+};
+
+var femaleAkanNames = {
+    "Sunday": "Akosua",
+    "Monday": "Adwoa",
+    "Tuesday": "Abenaa",
+    "Wednesday": "Akua",
+    "Thurday": "Yaa",
+    "Friday": "Afua",
+    "Saturday": "Ama"
+};
 // function to get Akan Names
 function getAkanName() {
     var userDetailsObj = getUserDetails();
@@ -192,7 +197,7 @@ function getAkanName() {
         alert("error");
     }
 
-    document.getElementById("results").innerHTML = "Hey Your Akan name is " + myAkanName;
+    document.getElementById("results").innerHTML = "Hey Your Akan name is " + myAkanName + "since your wer born on a" + myDay + "!";
 
 
 
@@ -208,7 +213,7 @@ function aggregateMyFunctions() {
     } else {
         getUserDetails();
         dayOfWkCal();
-        getAkanName()
+        getAkanName();
         return false;
     }
 }
